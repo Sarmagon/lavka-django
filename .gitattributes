@@ -5,3 +5,7 @@
 *.js text eol=lf
 *.yml text eol=lf
 *.png binary
+
+# Original storefront source must remain visible in GitHub language statistics.
+storefront_ui/static/lavka/*.css linguist-vendored=false linguist-generated=false
+storefront_ui/static/lavka/*.js linguist-vendored=false linguist-generated=false
