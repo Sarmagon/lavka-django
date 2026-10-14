@@ -1,0 +1,7 @@
+apiVersion: 1
+providers:
+  - name: Megano
+    folder: Megano
+    type: file
+    options:
+      path: /var/lib/grafana/dashboards

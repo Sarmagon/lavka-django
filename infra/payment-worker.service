@@ -1,0 +1,11 @@
+[Unit]
+Description=Megano payment queue worker
+After=network.target megano-payment.service
+[Service]
+User=megano
+WorkingDirectory=/srv/megano
+ExecStart=/srv/megano/.venv/bin/python manage.py payment_worker
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,19 @@
+
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+staticfiles/
+media/
+*.bak
+
+# Package build files
+build/
+dist/
+*.egg-info/
+
+# Local observability credentials, never committed.
+infra/observability/.env
+infra/observability/secrets/

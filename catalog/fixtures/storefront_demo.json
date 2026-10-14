@@ -1,0 +1,212 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 2001,
+    "fields": {
+      "title": "Телефон 19",
+      "description": "Учебный товар для проверки пагинации",
+      "category": 1002,
+      "manufacturer": "Марка A",
+      "sort_index": 19,
+      "limited": false,
+      "created_at": "2026-10-07T12:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "catalog.offer",
+    "pk": 2001,
+    "fields": {
+      "product": 2001,
+      "seller": 1001,
+      "price": "2900",
+      "stock": 3
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 2001,
+    "fields": {
+      "product": 1001,
+      "author": 1001,
+      "text": "Учебный отзыв 2: проверка догрузки.",
+      "rating": 4,
+      "created_at": "2026-10-07T12:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2002,
+    "fields": {
+      "title": "Телефон 20",
+      "description": "Учебный товар для проверки пагинации",
+      "category": 1002,
+      "manufacturer": "Марка A",
+      "sort_index": 20,
+      "limited": false,
+      "created_at": "2026-10-07T12:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "catalog.offer",
+    "pk": 2002,
+    "fields": {
+      "product": 2002,
+      "seller": 1001,
+      "price": "3000",
+      "stock": 3
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 2002,
+    "fields": {
+      "product": 1001,
+      "author": 1001,
+      "text": "Учебный отзыв 3: проверка догрузки.",
+      "rating": 5,
+      "created_at": "2026-10-07T12:01:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2003,
+    "fields": {
+      "title": "Телефон 21",
+      "description": "Учебный товар для проверки пагинации",
+      "category": 1002,
+      "manufacturer": "Марка A",
+      "sort_index": 21,
+      "limited": false,
+      "created_at": "2026-10-07T12:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "catalog.offer",
+    "pk": 2003,
+    "fields": {
+      "product": 2003,
+      "seller": 1001,
+      "price": "3100",
+      "stock": 3
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 2003,
+    "fields": {
+      "product": 1001,
+      "author": 1001,
+      "text": "Учебный отзыв 4: проверка догрузки.",
+      "rating": 4,
+      "created_at": "2026-10-07T12:02:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2004,
+    "fields": {
+      "title": "Телефон 22",
+      "description": "Учебный товар для проверки пагинации",
+      "category": 1002,
+      "manufacturer": "Марка A",
+      "sort_index": 22,
+      "limited": false,
+      "created_at": "2026-10-07T12:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "catalog.offer",
+    "pk": 2004,
+    "fields": {
+      "product": 2004,
+      "seller": 1001,
+      "price": "3200",
+      "stock": 3
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 2004,
+    "fields": {
+      "product": 1001,
+      "author": 1001,
+      "text": "Учебный отзыв 5: проверка догрузки.",
+      "rating": 5,
+      "created_at": "2026-10-07T12:03:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2005,
+    "fields": {
+      "title": "Телефон 23",
+      "description": "Учебный товар для проверки пагинации",
+      "category": 1002,
+      "manufacturer": "Марка A",
+      "sort_index": 23,
+      "limited": false,
+      "created_at": "2026-10-07T12:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "catalog.offer",
+    "pk": 2005,
+    "fields": {
+      "product": 2005,
+      "seller": 1001,
+      "price": "3300",
+      "stock": 3
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 2005,
+    "fields": {
+      "product": 1001,
+      "author": 1001,
+      "text": "Учебный отзыв 6: проверка догрузки.",
+      "rating": 4,
+      "created_at": "2026-10-07T12:04:00Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2006,
+    "fields": {
+      "title": "Телефон 24",
+      "description": "Учебный товар для проверки пагинации",
+      "category": 1002,
+      "manufacturer": "Марка A",
+      "sort_index": 24,
+      "limited": false,
+      "created_at": "2026-10-07T12:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "catalog.offer",
+    "pk": 2006,
+    "fields": {
+      "product": 2006,
+      "seller": 1001,
+      "price": "3400",
+      "stock": 3
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 2006,
+    "fields": {
+      "product": 1001,
+      "author": 1001,
+      "text": "Учебный отзыв 7: проверка догрузки.",
+      "rating": 5,
+      "created_at": "2026-10-07T12:05:00Z"
+    }
+  }
+]

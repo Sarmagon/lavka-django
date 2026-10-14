@@ -1,0 +1,9 @@
+{% load static %}<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Лавка — вещи для спокойного дня{% endblock %}</title>
+<link rel="stylesheet" href="{% static 'lavka/shop.css' %}"><script src="{% static 'lavka/shop.js' %}" defer></script></head>
+<body data-page="{% block page %}index{% endblock %}" data-product="{{ product_id|default:'' }}">
+<a class="skip" href="#main">К содержимому</a><div class="announcement">Учебный магазин · вымышленные товары · без реальных платежей</div>
+<header><a class="brand" href="/">лавка<span>дом & рабочее место</span></a><nav aria-label="Главное меню"><a href="/catalog/">Каталог</a><a href="/sale/">Скидки</a><a href="/history-order/">Мои заказы</a></nav><div class="header-actions"><a href="/profile/">Профиль</a><a class="bag" href="/cart/">Корзина <span id="basket-count">0</span></a></div></header>
+<main id="main">{% block content %}{% endblock %}</main>
+<div id="notice" role="status" aria-live="polite"></div><footer><a class="brand" href="/">лавка</a><p>Немного порядка. Больше пространства для себя.</p><p>Демонстрационный проект на Django. Изображения товаров сгенерированы.</p><a href="https://github.com/Sarmagon/lavka-django">Код проекта ↗</a></footer></body></html>

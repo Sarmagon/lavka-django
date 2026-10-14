@@ -1,0 +1,11 @@
+[Unit]
+Description=Megano mock payment service
+After=network.target
+[Service]
+User=megano
+WorkingDirectory=/srv/megano
+ExecStart=/srv/megano/.venv/bin/python manage.py mock_payment_service --host 127.0.0.1 --port 8001
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=multi-user.target

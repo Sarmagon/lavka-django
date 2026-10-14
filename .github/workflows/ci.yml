@@ -1,0 +1,25 @@
+name: Django checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  django:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+    env:
+      DJANGO_SECRET_KEY: ci-only-not-for-deployment-lavka
+      DJANGO_DEBUG: '0'
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1,testserver
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install poetry==2.5.1
+      - run: poetry install --no-root --no-interaction
+      - run: poetry run python manage.py check
+      - run: poetry run python manage.py makemigrations --check --dry-run
+      - run: poetry run python manage.py test
+      - run: git diff --check
